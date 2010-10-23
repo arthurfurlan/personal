@@ -1,0 +1,15 @@
+[user]
+    name = Arthur Furlan
+    email = afurlan@afurlan.org
+
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    ui = auto
+    grep = auto
+
+[alias]
+    st = status
+    ci = commit
+    co = checkout
