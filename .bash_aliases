@@ -21,3 +21,8 @@ export EDITOR=vim   # vim! vim! vim! ...
 
 # debian specific configuration
 export DEBEMAIL='Arthur Furlan <afurlan@afurlan.org>'
+
+# add the user binary directory to the PATH
+if [ -d "${HOME}/bin" ];then
+    export PATH="${HOME}/bin:${PATH}"
+fi
