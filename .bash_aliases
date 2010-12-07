@@ -10,6 +10,14 @@
 # /usr/share/common-licenses/GPL-2
 
 
+# enable color support
+if [ -x /usr/bin/dircolors ]; then
+    eval "`dircolors -b`"
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
 # the lack of these aliases make me sick
 alias ll='ls -l'
 alias la='ls -A'
