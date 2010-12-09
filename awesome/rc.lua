@@ -336,6 +336,7 @@ awful.rules.rules = {
     { rule = { class = "Pidgin" }, properties = { tag = tags[1][3] } },
     { rule = { class = "Xchat" }, properties = { tag = tags[1][3] } },
     { rule = { class = "Gnote" }, properties = { tag = tags[1][4] } },
+    { rule = { class = "Alarmclock" }, properties = { tag = tags[1][4] } },
     { rule = { class = "Icedove" }, properties = { tag = tags[1][5] } },
     { rule = { class = "Virt-manager.py" }, properties = { tag = tags[1][6] } },
 }
