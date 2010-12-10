@@ -30,6 +30,9 @@ export EDITOR=vim   # vim! vim! vim! ...
 # debian specific configuration
 export DEBEMAIL='Arthur Furlan <afurlan@afurlan.org>'
 
+# fix java application in the awesome window manager
+export AWT_TOOLKIT=MToolkit
+
 # add the user binary directory to the PATH
 if [ -d "${HOME}/bin" ];then
     export PATH="${HOME}/bin:${PATH}"
