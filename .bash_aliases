@@ -23,6 +23,9 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -ACF'
 
+# some usefull aliases
+alias 7up='svn up'
+
 # what is best editor in the world?
 export EDITOR=emacs # ok, just kidding
 export EDITOR=vim   # vim! vim! vim! ... 
