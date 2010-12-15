@@ -25,5 +25,8 @@ set ai si      			    " set the auto-indent
 set is ic                   " set the search behaviour
 syntax on                   " enable syntax color
 
+" enable plugins
+filetype plugin on
+
 " useful aliases for mistyped commands
 cab W w | cab Q q | cab Wq wq | cab wQ wq | cab WQ wq | cab X x
