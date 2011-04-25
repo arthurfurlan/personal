@@ -1,5 +1,5 @@
 
-# Copyright (C) 2006 Arthur Furlan <afurlan@afurlan.org>
+# Copyright (C) 2006 Arthur Furlan <afurlan@valvim.com>
 # 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -31,7 +31,7 @@ export EDITOR=emacs # ok, just kidding
 export EDITOR=vim   # vim! vim! vim! ... 
 
 # debian specific configuration
-export EMAIL='afurlan@afurlan.org'
+export EMAIL='afurlan@valvim.com'
 export DEBEMAIL="Arthur Furlan <${EMAIL}>"
 
 # fix java application in awesome window manager
