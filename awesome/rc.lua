@@ -330,7 +330,7 @@ awful.rules.rules = {
 
     -- User custom rules
     { rule = { class = "Xterm" }, properties = { tag = tags[1][1] } },
-    { rule = { class = "Iceweasel" }, properties = { tag = tags[1][2] } },
+    --{ rule = { class = "Iceweasel" }, properties = { tag = tags[1][2] } },
     { rule = { class = "Google-chrome" }, properties = { tag = tags[1][2] } },
     { rule = { class = "Skype" }, properties = { tag = tags[1][3] } },
     { rule = { class = "Pidgin" }, properties = { tag = tags[1][3] } },
