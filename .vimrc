@@ -1,5 +1,5 @@
 
-" Copyright (C) 2006 Arthur Furlan <afurlan@valvim.com>
+" Copyright (C) 2006 Arthur Furlan <afurlan@mecasar.com>
 " 
 " This program is free software; you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@ set title                   " show filename on titlebar
 set fdm=marker              " enable folding
 set nobackup                " disable backup files
 set cot=menu                " autocomplete config
-set bg=dark                 " light/dark background
+set bg=light                " light/dark background
 set vb t_vb=			    " disable the errorbells
 set et ts=4	sw=4 st=4 sts=4 " tab with 4 blank spaces
 
