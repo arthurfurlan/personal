@@ -9,30 +9,24 @@
 # On Debian systems, you can find the full text of the license in
 # /usr/share/common-licenses/GPL-2
 
-
-# main settings
-hardstatus alwayslastline "%{= kw}%{.y}[%{.w}%-Lw%{.y}[%{.w}%n%f%u %t%{.y}]%{.w}%+Lw%{.y}]%{.w}%=%{.y}[%{.w}%d/%M %c%{.y}]%<%{.w}"
-termcapinfo xterm*|aterm*|rxvt*|kterm*|Eterm* hs:ts=\E]0;:fs=\007:ds=\E]0;\007
-hardcopy_append on
-activity "%D %C -> %n%f %t activity!"
-defscrollback 5000
+## general behaviour
 vbell off
 autodetach on
 startup_message off
-shell -$SHELL
-bufferfile $SCREENBUFFER
-nethack on
-defmonitor off
-caption splitonly "%2n %t"
+defscrollback 5000
+defutf8 on
+shell bash
 
+## status line
+hardstatus on
+hardstatus alwayslastline "%{= k}%-w%{= rw} %n %t %{-}%+w %-="
 
-bind c screen -t b 1
-
-# five bash sessions by default
+## default sessions
+screen -t b 0 bash
 screen -t b 1 bash
 screen -t b 2 bash
 screen -t b 3 bash
 screen -t b 4 bash
 screen -t b 5 bash
 screen -t b 6 bash
-select 1
+select 0
