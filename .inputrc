@@ -1,0 +1,41 @@
+
+# Copyright (C) 2012 Arthur Furlan <afurlan@mecasar.com>
+# 
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+# 
+# On Debian systems, you can find the full text of the license in
+# /usr/share/common-licenses/GPL-2
+
+
+## disable bell on tab-completion
+set bell-style none
+
+## 8bit support
+set input-meta on
+set convert-meta off
+set output-meta on
+set meta-flag on
+
+## tab completion
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set mark-symlinked-directories on
+
+## enable home/end
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+
+## enable delete/insert
+"\e[2~": quoted-insert
+"\e[3~": delete-char
+
+## word navigation
+"\e[5C": forward-word
+"\e[5D": backward-word
+
+## search navigation
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
