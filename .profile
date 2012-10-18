@@ -1,5 +1,5 @@
 
-# Copyright (C) 2006 Arthur Furlan <afurlan@valvim.com>
+# Copyright (C) 2006 Arthur Furlan <afurlan@mecasar.com>
 # 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -10,22 +10,24 @@
 # /usr/share/common-licenses/GPL-2
 
 
-[ -z "$PS1" ] && return         # if not running interactively, don't do anything
-
+## common configuration
 export HISTCONTROL=ignoreboth   # force ignoredups and ignorespace
 shopt -s histappend             # append to the history file, don't overwrite it
 shopt -s checkwinsize           # update the values of LINES and COLUMNS if necessary
 
-# make less more friendly for non-text input files
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+## colorized output
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 
-# set variable identifying the chroot you work in (used in the prompt)
-if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
+## macbook specific
+if [ -x /usr/libexec/path_helper ]; then
+	eval `/usr/libexec/path_helper -s`
 fi
 
-# alias definitions.
-[ -f ~/.bash_aliases ] && . ~/.bash_aliases
+## bash configration
+if [ "${BASH-no}" != "no" ]; then
+	[ -r /etc/bashrc ] && . /etc/bashrc
+fi
 
-# enable programmable completion
-[ -f /etc/bash_completion ] && . /etc/bash_completion
+## alias definitions
+[ -f ~/.bash_aliases ] && . ~/.bash_aliases
