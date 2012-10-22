@@ -26,8 +26,13 @@ fi
 
 ## bash configration
 if [ "${BASH-no}" != "no" ]; then
-	[ -r /etc/bashrc ] && . /etc/bashrc
+	[ -r /etc/bashrc ] && source /etc/bashrc
 fi
 
 ## alias definitions
-[ -f ~/.bash_aliases ] && . ~/.bash_aliases
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
+
+## virtualenv wrapper
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
