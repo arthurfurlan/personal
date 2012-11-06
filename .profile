@@ -9,6 +9,7 @@
 # On Debian systems, you can find the full text of the license in
 # /usr/share/common-licenses/GPL-2
 
+export TERM=linux
 
 ## common configuration
 export HISTCONTROL=ignoreboth   # force ignoredups and ignorespace
