@@ -25,17 +25,16 @@ alias l='ls -ACF'
 
 ## some usefull aliases
 alias top='top -F -R -o cpu'
+alias finder="open -a 'Finder'"
 
 ## what is best editor in the world?
 export EDITOR=emacs # ok, just kidding
 export EDITOR=vim   # vim! vim! vim! ... 
+export VISUAL=EDITOR
 
 ## debian specific configuration
 export EMAIL='afurlan@mecasar.com'
 export DEBEMAIL="Arthur Furlan <${EMAIL}>"
-
-## fix java application in awesome window manager
-export AWT_TOOLKIT=MToolkit
 
 ## add the user binary directory to the PATH
 if [ -d "${HOME}/bin" ];then
