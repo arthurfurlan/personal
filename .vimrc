@@ -1,11 +1,11 @@
 
 " Copyright (C) 2006 Arthur Furlan <afurlan@mecasar.com>
-" 
+"
 " This program is free software; you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
 " the Free Software Foundation; either version 2 of the License, or
 " (at your option) any later version.
-" 
+"
 " On Debian systems, you can find the full text of the license in
 " /usr/share/common-licenses/GPL-2
 
@@ -27,9 +27,17 @@ syntax on                   " enable syntax color
 
 " enable plugins
 filetype plugin on
-
-" enable pathogen
 execute pathogen#infect()
+
+" execute 'Flake8()' everytime you save a python file
+autocmd BufWritePost *.py call Flake8()
+
+" python smart indenting
+set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+
+" highlight end of line whitespace.
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
 
 " useful aliases for mistyped commands
 cab W w | cab Q q | cab Wq wq | cab wQ wq | cab WQ wq | cab X x
