@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/afurlan/Sandbox/mecasar/src/mecasar/apps/website/utils'
-let g:netrw_dirhist_2='/Users/afurlan/Sandbox/puppet/files/default/aliases'
-let g:netrw_dirhist_3='/Users/afurlan/Sandbox/mecasar/src/mecasar/apps/website/tests/backends'

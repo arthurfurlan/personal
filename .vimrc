@@ -35,10 +35,5 @@ if !exists("autocommands_loaded")
 endif
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
-" python-mode -- https://github.com/klen/python-mode
-let g:pymode_folding = 0
-let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8,mccabe"
-
 " useful aliases for mistyped commands
 cab W w | cab Q q | cab Wq wq | cab wQ wq | cab WQ wq | cab X x
