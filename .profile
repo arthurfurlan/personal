@@ -1,11 +1,11 @@
 
 # Copyright (C) 2006 Arthur Furlan <afurlan@mecasar.com>
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
 # (at your option) any later version.
-# 
+#
 # On Debian systems, you can find the full text of the license in
 # /usr/share/common-licenses/GPL-2
 
@@ -33,7 +33,15 @@ fi
 ## alias definitions
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
-## virtualenv wrapper
+## python virtualenv
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
+
+## ruby rvm
+if [ -f /Users/afurlan/.rvm/scripts/rvm ]; then
+    source /Users/afurlan/.rvm/scripts/rvm
+fi
+
+# add rvm to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin
