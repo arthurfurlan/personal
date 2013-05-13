@@ -32,6 +32,9 @@ execute pathogen#infect()
 " execute 'Flake8()' everytime you save a python file
 autocmd BufWritePost *.py call Flake8()
 
+" ruby standard indenting
+autocmd BufRead,BufNewFile *.rb,*.erb set et ts=2 sw=2 st=2 sts=2
+
 " python smart indenting
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
