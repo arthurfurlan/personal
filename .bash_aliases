@@ -1,11 +1,11 @@
 
-# Copyright (C) 2006 Arthur Furlan <afurlan@valvim.com>
-# 
+# Copyright (C) 2006 Arthur Furlan <afurlan@afurlan.org>
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
 # (at your option) any later version.
-# 
+#
 # On Debian systems, you can find the full text of the license in
 # /usr/share/common-licenses/GPL-2
 
@@ -33,7 +33,7 @@ export EDITOR=vim   # vim! vim! vim! ...
 export VISUAL=EDITOR
 
 ## debian specific configuration
-export EMAIL='afurlan@mecasar.com'
+export EMAIL='afurlan@afurlan.org'
 export DEBEMAIL="Arthur Furlan <${EMAIL}>"
 
 ## add the user binary directory to the PATH
