@@ -17,11 +17,10 @@ set fdm=marker              " enable folding
 set nobackup                " disable backup files
 set cot=menu                " autocomplete config
 set bg=light                " light/dark background
-set vb t_vb=			    " disable the errorbells
-set et ts=4	sw=4 st=4 sts=4 " tab with 4 blank spaces
-
+set vb t_vb=			          " disable the errorbells
+set et ts=2	sw=2 st=2 sts=2 " tab with 2 blank spaces
 set sm                      " show matching brackets
-set ai si      			    " set the auto-indent
+set ai si      			        " set the auto-indent
 set is ic                   " set the search behaviour
 syntax on                   " enable syntax color
 
@@ -32,8 +31,8 @@ execute pathogen#infect()
 " execute 'Flake8()' everytime you save a python file
 autocmd BufWritePost *.py call Flake8()
 
-" ruby standard indenting
-autocmd BufRead,BufNewFile *.rb,*.erb set et ts=2 sw=2 st=2 sts=2
+" python pep8 standard
+autocmd BufRead,BufNewFile *.py set et ts=2 sw=2 st=2 sts=2
 
 " python smart indenting
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
