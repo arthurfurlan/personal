@@ -29,17 +29,18 @@ filetype plugin on
 execute pathogen#infect()
 
 " execute 'Flake8()' everytime you save a python file
-autocmd BufWritePost *.py call Flake8()
+"autocmd BufWritePost *.py call Flake8()
 
 " python pep8 standard
-autocmd BufRead,BufNewFile *.py set et ts=2 sw=2 st=2 sts=2
+autocmd BufRead,BufNewFile *.py set et ts=4 sw=4 st=4 sts=4
 
 " python smart indenting
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
-" highlight end of line whitespace.
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
+" highlight end of line whitespace -- commented out because it make me sick
+" when working with people who don't give a shit about it.
+"highlight WhitespaceEOL ctermbg=red guibg=red
+"match WhitespaceEOL /\s\+$/
 
 " useful aliases for mistyped commands
 cab W w | cab Q q | cab Wq wq | cab wQ wq | cab WQ wq | cab X x
