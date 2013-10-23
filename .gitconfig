@@ -17,3 +17,5 @@
 	autosetupmerge = true
 [core]
 	editor = /usr/bin/vim
+[push]
+	default = matching
