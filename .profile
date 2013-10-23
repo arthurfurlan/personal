@@ -34,8 +34,8 @@ fi
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
 ## python virtualenv
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    source /usr/local/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper_lazy.sh ]; then
+    source /usr/local/bin/virtualenvwrapper_lazy.sh
 fi
 
 ## ruby rvm
