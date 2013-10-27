@@ -13,12 +13,13 @@
 ## enable color support
 if [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
-    alias ls='ls --color=auto'
+    alias ls='gls --color=auto --group-directories-first'
     alias grep='grep --color=auto'
     alias egrep='egrep --color=auto'
 fi
 
 ## the lack of these aliases make me sick
+alias ls='gls --color=auto --group-directories-first'
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -ACF'
