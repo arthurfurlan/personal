@@ -1,5 +1,5 @@
 
-# Copyright (C) 2006 Arthur Furlan <afurlan@afurlan.org>
+# Copyright (C) 2006 Arthur Furlan <afurlan@configr.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -25,6 +25,7 @@ alias la='ls -A'
 alias l='ls -ACF'
 
 ## some usefull aliases
+alias msh='mosh'
 alias top='top -F -R -o cpu'
 alias finder="open -a 'Finder'"
 
@@ -34,10 +35,19 @@ export EDITOR=vim   # vim! vim! vim! ...
 export VISUAL=EDITOR
 
 ## debian specific configuration
-export EMAIL='afurlan@afurlan.org'
+export EMAIL='afurlan@configr.com'
 export DEBEMAIL="Arthur Furlan <${EMAIL}>"
 
 ## add the user binary directory to the PATH
 if [ -d "${HOME}/bin" ];then
     export PATH="${HOME}/bin:${PATH}"
 fi
+
+## add the NVM binary directory to the PATH
+#export NVM_DIR="$HOME/.nvm"
+#. "/usr/local/opt/nvm/nvm.sh"
+
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+export PATH="/usr/local/opt/gettext/bin:$PATH"

@@ -1,6 +1,6 @@
 [user]
     name = Arthur Furlan
-    email = afurlan@afurlan.org
+    email = afurlan@configr.com
 [color]
     status = auto
     diff = auto
@@ -17,5 +17,5 @@
 	autosetupmerge = true
 [core]
 	editor = /usr/bin/vim
-[push]
-	default = matching
+#[push]
+#	default = matching

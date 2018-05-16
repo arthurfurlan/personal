@@ -22,7 +22,8 @@ hardstatus on
 hardstatus alwayslastline "%{= k}%-w%{= rw} %n %t %{-}%+w %-="
 
 ## default sessions
-bind c screen -t b 1
+bind c screen -t b 0
+screen -t b 0 bash
 screen -t b 1 bash
 screen -t b 2 bash
 screen -t b 3 bash
@@ -30,4 +31,4 @@ screen -t b 4 bash
 screen -t b 5 bash
 screen -t b 6 bash
 screen -t b 7 bash
-select 1
+select 0

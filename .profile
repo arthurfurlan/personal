@@ -38,10 +38,6 @@ if [ -f /usr/local/bin/virtualenvwrapper_lazy.sh ]; then
     source /usr/local/bin/virtualenvwrapper_lazy.sh
 fi
 
-## ruby rvm
-if [ -f /Users/afurlan/.rvm/scripts/rvm ]; then
-    source /Users/afurlan/.rvm/scripts/rvm
-fi
-
-# add rvm to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
+# include python to PATH for scripting
+export PATH=/usr/local/share/python:$PATH
+export LC_ALL="en_US.UTF-8"

@@ -25,8 +25,8 @@ set is ic                   " set the search behaviour
 syntax on                   " enable syntax color
 
 " enable plugins
-filetype plugin on
-execute pathogen#infect()
+"filetype plugin on
+"execute pathogen#infect()
 
 " execute 'Flake8()' everytime you save a python file
 "autocmd BufWritePost *.py call Flake8()
